@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+  <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+  <script src="components/loader.js"></script>
+<script src="components/json.js"></script>
+  <link rel="stylesheet" href="components/loader.css">
+  <link rel="stylesheet" href="components/json.js">
+  <link rel="stylesheet" href="css/style.css">
+</head> 
+<body>
+    <h3>Estoque dos Repetecos<h3>
+    <p id="json"></p>
+
+<script>
+const iph = {"cd":"1","nome":"Iphone","valor":"5132.23","foto":"img\/iphone.png"};
+const xio = {"cd":"2","nome":"Xiaomi","valor":"1567.45","foto":"img\/xiaomi.png"};
+const not = {"cd":"3","nome":"Notebook Lenovo","valor":"3899.75","foto":"img\/lenovo.png"};
+const plc = {"cd":"4","nome":"Placa de V\u00eddeo","valor":"4750.00","foto":"img\/placa.png"};
+document.getElementById("json").innerHTML = "<br> |tem uma foto aqui|<br><br>" + iph.nome + "<br><br>" + "R$ " + iph.valor + "<br><br><br> |tem uma foto aqui|<br><br>" + xio.nome + "<br><br>" + "R$ " + xio.valor + "<br> |tem uma foto aqui|<br><br>" + not.nome + "<br><br>" + "R$ " + not.valor + "<br><br><br> |tem uma foto aqui|<br><br>" + plc.nome + "<br><br>" + "R$ " + plc.valor;
+</script>
+
+</body>
+</html>
